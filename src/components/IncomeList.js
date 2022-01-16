@@ -16,7 +16,7 @@ function IncomeList({income, setIncome}) {
         <div className='income-list'>
             {
             income.sort(sortByDate).map((value, index) => {
-                <IncomeItem key={key} income={value} index={index} removeIncome={removeIncome} />
+                <IncomeItem key={index} income={value} index={index} removeIncome={removeIncome} />
             })
         }
         </div>
